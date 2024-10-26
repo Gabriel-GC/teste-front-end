@@ -227,6 +227,7 @@ input:checked ~ .content__element__hamburger {
   left: 20%;
   transform: translate(-50%, -50%);
   color: white;
+  padding: 10px;
 }
 .content__hero h1 {
   font-size: 48px;
@@ -456,8 +457,12 @@ section.slider {
 
   /* Slideshow container */
   .content__hero{
+    padding: 10px;
     top: 45%;
     left: 35%;
+  }
+  .content__hero h1{
+    font-size: 28px;
   }
   .nav__auto,
   .nav__manual {
