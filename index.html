@@ -42,7 +42,6 @@
             </div>
         </div>
         <div class="content__navbar">
-
             <nav class="content__hamburger">
                 <input id="content__hamburger" type="checkbox" />
                 <label for="content__hamburger">
@@ -93,15 +92,12 @@
         <input type="text" placeholder="EX. CAMISETA">
         <img src="./assets/icons/procurar-b.png" alt="pesquisa">
     </div>
-
-    <section class="slider">
-        <div class="slider__content">
-
+    <section class="hero">
+        <div class="hero__content">
             <input type="radio" name="btn__radio" id="radio1">
             <input type="radio" name="btn__radio" id="radio2">
             <input type="radio" name="btn__radio" id="radio3">
-
-            <div class="slide__box primeiro">
+            <div class="hero__box primeiro">
                 <div class="content__hero">
                     <div class="logo__hero">
                         <img src="./assets/logotipe/logo-64-b.png" alt="">
@@ -112,11 +108,10 @@
                     <p>Relógio pulso <span>emporio armani black</span></p>
                     <button>compre agora</button>
                 </div>
-                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="slide 1">
-                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="slide 1">
+                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="hero 1">
+                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="hero 1">
             </div>
-            
-            <div class="slide__box">
+            <div class="hero__box">
                 <div class="content__hero">
                     <div class="logo__hero">
                         <img src="./assets/logotipe/logo-64-b.png" alt="">
@@ -127,11 +122,10 @@
                     <p>Relógio pulso <span>emporio armani black</span></p>
                     <button>Saiba mais</button>
                 </div>
-                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="slide 2">
-                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="slide 2">
+                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="hero 2">
+                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="hero 2">
             </div>
-
-            <div class="slide__box">
+            <div class="hero__box">
                 <div class="content__hero">
                     <div class="logo__hero">
                         <img src="./assets/logotipe/logo-64-b.png" alt="">
@@ -142,22 +136,174 @@
                     <p>Relógio pulso <span>emporio armani black</span></p>
                     <button>visitar</button>
                 </div>
-                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="slide 3">
-                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="slide 3">
+                <img class="img__desktop" src="./assets/banners/banner-hero-novidades.jpg" alt="hero 3">
+                <img class="img__mobile" src="./assets/banners/banner-hero-novidades-mobile.jpg" alt="hero 3">
             </div>
-
             <div class="nav__auto">
                 <div class="auto__btn1"></div>
                 <div class="auto__btn2"></div>
                 <div class="auto__btn3"></div>
             </div>
-
             <div class="nav__manual">
                 <label for="radio1" class="manual__btn"></label>
                 <label for="radio2" class="manual__btn"></label>
                 <label for="radio3" class="manual__btn"></label>
             </div>
-
+        </div>
+    </section>
+    <section class="products__sroll__galery">
+        <p class="row__title">Recomendados para você</p>
+        <button id="slide__left" type="button"><img src="./assets/icons/left-row.png"
+                alt="icone para esquerda"></button>
+        <button id="slide__right" type="button"><img src="./assets/icons/right-row.png"
+                alt="icone para direita"></button>
+        <div class="row" id="roww">
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/banners/product-tree.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-one.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-two.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-tree.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-two.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-one.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content__overlay">
+                    <div class="content__icon__promo">
+                        <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
+                        <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
+                    </div>
+                    <img id="icon__favorite" onclick="setFavoriteIcon()" src="assets/icons/favorite-b.png"
+                        alt="icone favorito">
+                    <img src="assets/banners/product-two.png">
+                    <div class="overlay"></div>
+                    <div class="overlay__button">
+                        <a href="#">Compre agora</a>
+                    </div>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Camiseta Masculina Pima</h3>
+                    <p class="card__price">R$ 249,00 <span id="off">R$ 369,00</span><span id="small"> 3x R$ 99,97</span>
+                    <p class="card__price__pix">R$ 229,90 <span id="pix">no PIX</span></p>
+                    <span id="small">+ 19 cores</span>
+                </div>
+            </div>
         </div>
     </section>
 
