@@ -375,23 +375,36 @@ section.hero {
   transition: 0.3s;
 }
 
+
 #slide__left:hover,
 #slide__right:hover {
   transform: scale(1.1);
 }
 
 #slide__left__category:hover,
+<<<<<<< HEAD
 #slide__right__category:hover {
   opacity: 1;
 }
 
 #slide__left__category {
+=======
+#slide__right__category:hover{
+  opacity: 1;
+}
+
+#slide__left__category{
+>>>>>>> e11bdee (style: adiciona estilização e responsividade na seção de categorias)
   opacity: 0.5;
   float: right;
   right: 20rem;
   bottom: 24px;
 }
+<<<<<<< HEAD
 #slide__right__category {
+=======
+#slide__right__category{
+>>>>>>> e11bdee (style: adiciona estilização e responsividade na seção de categorias)
   opacity: 0.5;
   float: right;
   right: 15rem;
@@ -403,6 +416,7 @@ section.hero {
   left: 40px;
   z-index: 1;
 }
+
 
 #slide__right {
   top: 14rem;
