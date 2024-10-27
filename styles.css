@@ -375,24 +375,23 @@ section.hero {
   transition: 0.3s;
 }
 
-
 #slide__left:hover,
 #slide__right:hover {
   transform: scale(1.1);
 }
 
 #slide__left__category:hover,
-#slide__right__category:hover{
+#slide__right__category:hover {
   opacity: 1;
 }
 
-#slide__left__category{
+#slide__left__category {
   opacity: 0.5;
   float: right;
   right: 20rem;
   bottom: 24px;
 }
-#slide__right__category{
+#slide__right__category {
   opacity: 0.5;
   float: right;
   right: 15rem;
@@ -404,7 +403,6 @@ section.hero {
   left: 40px;
   z-index: 1;
 }
-
 
 #slide__right {
   top: 14rem;
@@ -556,6 +554,12 @@ section.hero {
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
   /* Ocultação de elementos desktop */
   .container__header,
   #slide__left,
