@@ -555,7 +555,14 @@ section.hero {
 
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+
 @media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
   /* Ocultação de elementos desktop */
   .container__header,
   #slide__left,
