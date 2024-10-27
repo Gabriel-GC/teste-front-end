@@ -18,19 +18,34 @@ function proximaImg() {
   document.getElementById("radio" + cont).checked = true;
 }
 
-// Galeria de produtos
+// Galeria de produtos/categorias
 
 document.addEventListener(
   "DOMContentLoaded",
   function () {
     var button = document.getElementById("slide__right");
     button.onclick = function () {
-      document.getElementById("roww").scrollLeft += 300;
+      document.getElementById("row__recommends").scrollLeft += 300;
     };
     var button = document.getElementById("slide__left");
     button.onclick = function () {
-      document.getElementById("roww").scrollLeft -= 300;
+      document.getElementById("row__recommends").scrollLeft -= 300;
     };
   },
   false
 );
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      var button = document.getElementById("slide__right__category");
+      button.onclick = function () {
+        document.getElementById("row__category").scrollLeft += 300;
+      };
+      var button = document.getElementById("slide__left__category");
+      button.onclick = function () {
+        document.getElementById("row__category").scrollLeft -= 300;
+      };
+    },
+    false
+  );
