@@ -514,6 +514,7 @@ input:checked ~ .content__element__hamburger {
   overflow-y: auto;
   gap: 1rem;
   padding-left: 30rem;
+  padding-bottom: 3rem;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
