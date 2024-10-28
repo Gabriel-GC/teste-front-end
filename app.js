@@ -49,3 +49,48 @@ document.addEventListener(
     },
     false
   );
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      var button = document.getElementById("slide__right__sunglasses");
+      button.onclick = function () {
+        document.getElementById("row__sunglasses").scrollLeft += 300;
+      };
+      var button = document.getElementById("slide__left__sunglasses");
+      button.onclick = function () {
+        document.getElementById("row__sunglasses").scrollLeft -= 300;
+      };
+    },
+    false
+  );
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      var button = document.getElementById("slide__right__sellers");
+      button.onclick = function () {
+        document.getElementById("row__sellers").scrollLeft += 300;
+      };
+      var button = document.getElementById("slide__left__sellers");
+      button.onclick = function () {
+        document.getElementById("row__sellers").scrollLeft -= 300;
+      };
+    },
+    false
+  );
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      var button = document.getElementById("slide__right__perfumes");
+      button.onclick = function () {
+        document.getElementById("row__perfumes").scrollLeft += 300;
+      };
+      var button = document.getElementById("slide__left__perfumes");
+      button.onclick = function () {
+        document.getElementById("row__perfumes").scrollLeft -= 300;
+      };
+    },
+    false
+  );
