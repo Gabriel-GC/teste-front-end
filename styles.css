@@ -496,10 +496,17 @@ input:checked ~ .content__element__hamburger {
   padding: 2rem 0 0 8rem;
   font-weight: bolder;
 }
-#slide__left,
 #slide__right,
+#slide__left,
+#slide__right__category,
 #slide__left__category,
-#slide__right__category {
+#slide__right__sellers,
+#slide__left__sellers,
+#slide__right__sunglasses,
+#slide__left__sunglasses,
+#slide__right__perfumes,
+#slide__left__perfumes
+ {
   position: relative;
   background: none;
   border: none;
@@ -507,15 +514,19 @@ input:checked ~ .content__element__hamburger {
   transition: 0.3s;
 }
 
+#slide__right:hover,
 #slide__left:hover,
-#slide__right:hover {
+#slide__right__category:hover,
+#slide__left__category:hover,
+#slide__right__sellers:hover,
+#slide__left__sellers:hover,
+#slide__right__sunglasses:hover,
+#slide__left__sunglasses:hover,
+#slide__right__perfumes:hover,
+#slide__left__perfumes:hover {
   transform: scale(1.1);
 }
 
-#slide__left__category:hover,
-#slide__right__category:hover {
-  opacity: 1;
-}
 
 #slide__left__category {
   opacity: 0.5;
@@ -530,13 +541,21 @@ input:checked ~ .content__element__hamburger {
   bottom: 24px;
 }
 
-#slide__left {
+#slide__left,
+#slide__left__category,
+#slide__left__sellers,
+#slide__left__sunglasses,
+#slide__left__perfumes {
   top: 14rem;
   left: 40px;
   z-index: 1;
 }
 
-#slide__right {
+#slide__right,
+#slide__right__category,
+#slide__right__sellers,
+#slide__right__sunglasses,
+#slide__right__perfumes {
   top: 14rem;
   right: 40px;
   float: right;
@@ -701,15 +720,21 @@ input:checked ~ .content__element__hamburger {
 
   /* Ocultação de elementos desktop */
   .container__header,
-  #slide__left,
-  #slide__right,
   .info__header,
+  #slide__right,
+  #slide__left,
+  #slide__right__category,
   #slide__left__category,
-  #slide__right__category {
+  #slide__right__sellers,
+  #slide__left__sellers,
+  #slide__right__sunglasses,
+  #slide__left__sunglasses,
+  #slide__right__perfumes,
+  #slide__left__perfumes {
     display: none;
   }
 
-  /* Mostra elementos mobile */
+  /* Mostra elementos do mobile */
   .info__header__mobile {
     display: flex;
     align-items: center;
