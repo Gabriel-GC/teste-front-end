@@ -94,3 +94,18 @@ document.addEventListener(
     },
     false
   );
+  
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      var button = document.getElementById("slide__left__accessories");
+      button.onclick = function () {
+        document.getElementById("row__accessories").scrollLeft += 300;
+      };
+      var button = document.getElementById("slide__right__accessories");
+      button.onclick = function () {
+        document.getElementById("row__accessories").scrollLeft -= 300;
+      };
+    },
+    false
+  );
