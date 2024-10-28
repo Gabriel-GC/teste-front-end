@@ -80,7 +80,6 @@ button {
   border: 1px solid var(--color-opacity);
   padding: 8px 24px 8px 12px;
   font-size: 12px;
-  text-transform: uppercase;
   color: var(--main-primary);
   background: transparent;
   background-image: url(assets/icons/procurar.png);
@@ -444,10 +443,10 @@ input:checked ~ .content__element__hamburger {
   font-size: 30px;
   font-weight: 500;
 }
-.content__info p {
+#p__brand {
   text-align: center;
-  width: 35%;
   font-size: 12px;
+  width: 35%;
 }
 #tatuape {
   width: 44px;
@@ -660,6 +659,37 @@ input:checked ~ .content__element__hamburger {
   color: var(--main-black-secundary);
 }
 
+/* Banner calling */
+
+.banner__calling {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#p__calling {
+  text-align: center;
+  font-size: 12px;
+  width: 55%;
+}
+.banner__content__calling {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  background-color: var(--main-tertiary);
+  background-image: url(assets/logotipe/logo-256-w.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.background__info {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media (max-width: 768px) {
@@ -770,7 +800,7 @@ input:checked ~ .content__element__hamburger {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 9rem 1rem 1rem 1rem;
+    padding: 8.5rem 1rem 1rem 1rem;
   }
   .search__mobile p {
     text-transform: uppercase;
@@ -828,7 +858,7 @@ input:checked ~ .content__element__hamburger {
     padding: 3rem 0;
     flex-direction: column-reverse;
   }
-  .content__info p {
+  #p__brand {
     width: 65%;
   }
 
@@ -859,5 +889,15 @@ input:checked ~ .content__element__hamburger {
   }
   .overlay__button a {
     padding: 15px 15px;
+  }
+
+  /* Banner calling */
+  .banner__content__calling {
+    flex-direction: column;
+    background-image: none;
+    margin: 2rem 0;
+  }
+  #p__calling {
+    width: 95%;
   }
 }
