@@ -340,12 +340,57 @@ section.hero {
   margin-left: -50%;
 }
 
-/*Galeria de produtos*/
-
+/*Galeria de categoria*/
 .scroll__galery {
   background-color: var(--main-primary);
 }
+#slide__left__category:hover,
+#slide__right__category:hover {
+  opacity: 1;
+}
 
+#slide__left__category {
+  opacity: 0.5;
+  float: right;
+  right: 20rem;
+  bottom: 24px;
+}
+#slide__right__category {
+  opacity: 0.5;
+  float: right;
+  right: 15rem;
+  bottom: 24px;
+}
+.card__category {
+  text-decoration: underline;
+  font-size: 14px;
+  color: var(--main-black-tertiary);
+}
+.content__button {
+  position: absolute;
+  right: 0;
+  bottom: 11px;
+  text-align: center;
+  border: none;
+  transition: opacity 0.35s ease;
+  transition: 0.4s;
+}
+.content__button a {
+  padding: 12px 14px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-primary);
+  background: var(--primary-degrade);
+  cursor: pointer;
+}
+
+/* Banner brand */
+
+
+
+/*Galeria de produtos*/
 .row {
   width: 100%;
   align-items: stretch;
@@ -375,28 +420,9 @@ section.hero {
   transition: 0.3s;
 }
 
-
 #slide__left:hover,
 #slide__right:hover {
   transform: scale(1.1);
-}
-
-#slide__left__category:hover,
-#slide__right__category:hover{
-  opacity: 1;
-}
-
-#slide__left__category{
-  opacity: 0.5;
-  float: right;
-  right: 20rem;
-  bottom: 24px;
-}
-#slide__right__category{
-  opacity: 0.5;
-  float: right;
-  right: 15rem;
-  bottom: 24px;
 }
 
 #slide__left {
@@ -404,7 +430,6 @@ section.hero {
   left: 40px;
   z-index: 1;
 }
-
 
 #slide__right {
   top: 14rem;
@@ -478,25 +503,6 @@ section.hero {
   display: block;
   background: rgba(0, 0, 0, 0.5);
 }
-.content__button {
-  position: absolute;
-  right: 0;
-  bottom: 11px;
-  text-align: center;
-  border: none;
-  transition: opacity 0.35s ease;
-  transition: 0.4s;
-}
-.content__button a {
-  padding: 12px 14px;
-  font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--main-primary);
-  background: var(--primary-degrade);
-  cursor: pointer;
-}
 
 .overlay__button {
   position: absolute;
@@ -528,11 +534,6 @@ section.hero {
   opacity: 1;
 }
 
-.card__category {
-  text-decoration: underline;
-  font-size: 14px;
-  color: var(--main-black-tertiary);
-}
 .card__title {
   font-size: 14px;
   color: var(--main-black-tertiary);
@@ -554,7 +555,6 @@ section.hero {
 }
 
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 
 @media (max-width: 768px) {
   header {
