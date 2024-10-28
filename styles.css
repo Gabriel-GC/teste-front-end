@@ -3,6 +3,7 @@
 :root {
   --main-primary: #fff;
   --main-secundary: #f1eeee;
+  --main-tertiary: #f5f5f5;
   --main-black: #000;
   --main-black-secundary: #242424;
   --main-black-tertiary: #444444;
@@ -216,7 +217,15 @@ input:checked ~ .content__element__hamburger {
 
 /* Slideshow container */
 
-.content__hero {
+.hero {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.hero__info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,18 +238,18 @@ input:checked ~ .content__element__hamburger {
   color: white;
   padding: 10px;
 }
-.content__hero h1 {
+.hero__info h1 {
   font-size: 48px;
   text-transform: uppercase;
 }
-.content__hero hr {
+.hero__info hr {
   height: 60px;
   border-color: var(--main-black);
 }
-.content__hero p {
+.hero__info p {
   text-transform: uppercase;
 }
-.content__hero span {
+.hero__info span {
   font-weight: bold;
 }
 .logo__hero {
@@ -250,7 +259,7 @@ input:checked ~ .content__element__hamburger {
   flex-direction: row;
   gap: 2rem;
 }
-.content__hero button {
+.hero__info button {
   width: 150px;
   height: 44px;
   text-transform: uppercase;
@@ -261,16 +270,8 @@ input:checked ~ .content__element__hamburger {
   transition: 0.3s;
   cursor: pointer;
 }
-.content__hero button:hover {
+.hero__info button:hover {
   transform: scale(1.05);
-}
-
-section.hero {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  padding: 0 !important;
-  overflow: hidden;
 }
 
 .hero__content {
@@ -388,7 +389,94 @@ section.hero {
 
 /* Banner brand */
 
+.banner__brand {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.banner__content {
+  display: flex;
+  width: 100%;
+  padding: 0 3rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--main-tertiary);
+}
+.banner__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.banner__image img {
+  width: 100%;
+}
+
+.content__brand {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.content__info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.content__info__logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.content__info h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.content__info p {
+  text-align: center;
+  width: 35%;
+  font-size: 12px;
+}
+#tatuape {
+  width: 44px;
+}
+
+#lacoste {
+  width: 100px;
+}
+
+.content__info__logo hr {
+  height: 60px;
+  opacity: 0.3;
+  border-color: var(--main-black-tertiary);
+}
+
+.content__info button {
+  width: 150px;
+  height: 44px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: var(--main-primary);
+  background: var(--primary-degrade);
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.content__info button:hover {
+  transform: scale(1.05);
+}
 
 /*Galeria de produtos*/
 .row {
@@ -426,17 +514,17 @@ section.hero {
 }
 
 #slide__left__category:hover,
-#slide__right__category:hover{
+#slide__right__category:hover {
   opacity: 1;
 }
 
-#slide__left__category{
+#slide__left__category {
   opacity: 0.5;
   float: right;
   right: 20rem;
   bottom: 24px;
 }
-#slide__right__category{
+#slide__right__category {
   opacity: 0.5;
   float: right;
   right: 15rem;
@@ -670,6 +758,7 @@ section.hero {
     display: flex;
     height: 20px;
     width: 30px;
+    margin: 18px;
   }
 
   /* Barra de pesquisa */
@@ -681,7 +770,7 @@ section.hero {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 9rem 1rem 1rem 1rem;
   }
   .search__mobile p {
     text-transform: uppercase;
@@ -697,12 +786,13 @@ section.hero {
   }
 
   /* Slideshow container */
-  .content__hero {
+  .hero__info {
     padding: 10px;
     top: 45%;
     left: 35%;
+    gap: 10px;
   }
-  .content__hero h1 {
+  .hero__info h1 {
     font-size: 28px;
   }
   .nav__auto,
@@ -720,6 +810,26 @@ section.hero {
   .nav__auto,
   .nav__manual {
     margin-top: 60%;
+  }
+
+  /* Banner brands */
+  .content__brand {
+    padding: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    justify-content: initial;
+  }
+  .content__brand img {
+    width: 110px;
+  }
+
+  .banner__content {
+    padding: 3rem 0;
+    flex-direction: column-reverse;
+  }
+  .content__info p {
+    width: 65%;
   }
 
   /* Galeria de produtos */
