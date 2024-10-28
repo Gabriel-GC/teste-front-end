@@ -425,6 +425,24 @@ section.hero {
   transform: scale(1.1);
 }
 
+#slide__left__category:hover,
+#slide__right__category:hover{
+  opacity: 1;
+}
+
+#slide__left__category{
+  opacity: 0.5;
+  float: right;
+  right: 20rem;
+  bottom: 24px;
+}
+#slide__right__category{
+  opacity: 0.5;
+  float: right;
+  right: 15rem;
+  bottom: 24px;
+}
+
 #slide__left {
   top: 14rem;
   left: 40px;
