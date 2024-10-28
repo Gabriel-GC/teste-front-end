@@ -341,7 +341,15 @@ input:checked ~ .content__element__hamburger {
 }
 
 /*Galeria de categoria*/
-.scroll__galery {
+
+.scroll__galery__accessories{
+  background-color: var(--main-black);
+}
+.scroll__galery__accessories, #white, .white{
+  color: var(--main-primary);
+}
+
+.scroll__galery,  .scroll__category{
   background-color: var(--main-primary);
 }
 #slide__left__category:hover,
@@ -477,7 +485,7 @@ input:checked ~ .content__element__hamburger {
   transform: scale(1.05);
 }
 
-/*Galeria de produtos*/
+/*Galerias*/
 .row {
   width: 100%;
   align-items: stretch;
@@ -491,11 +499,46 @@ input:checked ~ .content__element__hamburger {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-
 .row__title {
   padding: 2rem 0 0 8rem;
   font-weight: bolder;
 }
+
+.row__accessories {
+  width: 100%;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: auto;
+  gap: 1rem;
+  padding-left: 30rem;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+#title__off{
+  opacity: 0;
+}
+
+.accessories__title{
+  position: absolute;
+  display: flex;
+  left: -3rem;
+  width: 500px;
+  height: 450px;
+  background-color: var(--main-black);
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+.accessories__title h3{
+  font-size: 42px;
+  padding-left: 6rem;
+  width: 400px;
+}
+
 #slide__right,
 #slide__left,
 #slide__right__category,
@@ -505,13 +548,16 @@ input:checked ~ .content__element__hamburger {
 #slide__right__sunglasses,
 #slide__left__sunglasses,
 #slide__right__perfumes,
-#slide__left__perfumes
+#slide__left__perfumes,
+#slide__right__accessories,
+#slide__left__accessories
  {
   position: relative;
   background: none;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+
 }
 
 #slide__right:hover,
@@ -523,7 +569,9 @@ input:checked ~ .content__element__hamburger {
 #slide__right__sunglasses:hover,
 #slide__left__sunglasses:hover,
 #slide__right__perfumes:hover,
-#slide__left__perfumes:hover {
+#slide__left__perfumes:hover,
+#slide__right__accessories:hover,
+#slide__left__accessories:hover {
   transform: scale(1.1);
 }
 
@@ -539,6 +587,19 @@ input:checked ~ .content__element__hamburger {
   float: right;
   right: 15rem;
   bottom: 24px;
+}
+
+#slide__right__accessories{
+  top: 14rem;
+  left: 32rem;
+  z-index: 1;
+}
+
+#slide__left__accessories{
+top: 14rem;
+  right: 40px;
+  float: right;
+  z-index: 1;
 }
 
 #slide__left,
@@ -730,11 +791,17 @@ input:checked ~ .content__element__hamburger {
   #slide__right__sunglasses,
   #slide__left__sunglasses,
   #slide__right__perfumes,
-  #slide__left__perfumes {
+  #slide__left__perfumes,
+  #slide__right__accessories,
+  #slide__left__accessories,
+  .accessories__title {
     display: none;
   }
 
   /* Mostra elementos do mobile */
+  #title__off{
+    opacity: 1;
+  }
   .info__header__mobile {
     display: flex;
     align-items: center;
@@ -888,9 +955,10 @@ input:checked ~ .content__element__hamburger {
   }
 
   /* Galeria de produtos */
-  .row {
+  .row , .row__accessories{
     padding-left: 1rem;
   }
+
   .row__title {
     padding: 2rem 0 1rem 1rem;
   }
@@ -925,4 +993,6 @@ input:checked ~ .content__element__hamburger {
   #p__calling {
     width: 95%;
   }
+
+  /* Banner acessorios */
 }
