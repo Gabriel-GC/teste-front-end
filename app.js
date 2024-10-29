@@ -126,3 +126,24 @@ document.addEventListener(
   },
   false
 );
+
+// Newslatter
+
+var nameInput = document.getElementById("name");
+var emailInput = document.getElementById("email");
+var checklInput = document.getElementById("terms");
+var theForm = document.getElementsByClassName("content__form");
+
+document
+  .querySelector("form.content__form")
+  .addEventListener("submit", function (e) {
+    e.defaultPrevented();
+
+    console.log(nameInput.value);
+    console.log(emailInput.value);
+    console.log(checklInput.value);
+  });
+
+function mensageSubmit() {
+  alert("Newslatter assinada");
+}
