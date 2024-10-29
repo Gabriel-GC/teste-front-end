@@ -436,7 +436,7 @@ input:checked ~ .content__element__hamburger {
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px 24px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -748,7 +748,6 @@ top: 14rem;
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column-reverse;
 }
 #p__calling {
   text-align: center;
@@ -766,11 +765,6 @@ top: 14rem;
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 30%;
-}
-.background__info {
-  position: relative;
-  bottom: 0;
-  left: 0;
 }
 
 /* Recomendações  */
@@ -840,6 +834,23 @@ top: 14rem;
 
 .recommends__card:hover {
   transform: scale(1.03);
+}
+
+/* Banner exclusividade */
+
+.banner__calling__two {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.banner__content__calling__two {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--main-secundary);
 }
 
 
@@ -1066,6 +1077,8 @@ top: 14rem;
     background-image: none;
     margin: 2rem 0;
   }
+
+
   #p__calling {
     width: 95%;
   }
@@ -1081,6 +1094,14 @@ top: 14rem;
   }
   .recommends__carousel{
     padding-left: 2rem;
+  }
+
+  /* Banner exclusividade */
+  
+  .banner__content__calling__two {
+    flex-direction: column;
+    background-image: none;
+    margin: 2rem 0;
   }
 
   
