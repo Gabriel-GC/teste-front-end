@@ -551,7 +551,9 @@ input:checked ~ .content__element__hamburger {
 #slide__right__perfumes,
 #slide__left__perfumes,
 #slide__right__accessories,
-#slide__left__accessories
+#slide__left__accessories,
+.button__recommends__right,
+.button__recommends__left
  {
   position: relative;
   background: none;
@@ -572,7 +574,9 @@ input:checked ~ .content__element__hamburger {
 #slide__right__perfumes:hover,
 #slide__left__perfumes:hover,
 #slide__right__accessories:hover,
-#slide__left__accessories:hover {
+#slide__left__accessories:hover,
+.button__recommends__right:hover,
+.button__recommends__left:hover {
   transform: scale(1.1);
 }
 
@@ -769,6 +773,77 @@ top: 14rem;
   left: 0;
 }
 
+/* Recomendações  */
+
+.recommends{
+  width: 100%;
+  height: 20rem;
+  padding: 3rem 4rem;
+}
+
+.recommends__carousel {
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  scrollbar-width: none;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.recommends__stars{
+  display: flex;
+  flex-direction: row;
+}
+
+.button__recommends__left {
+  top: 5rem;
+  right: 1rem;
+  z-index: 1;
+}
+.button__recommends__right{
+  top: 5rem;
+  float: right;
+  left: 2rem;
+  z-index: 1;
+}
+
+.recommends__cards {
+  width: 100%; 
+  display: flex; 
+  margin: 8px;
+  gap: 8px; 
+  flex: 0 0 calc(30% - 16px);
+  justify-content: center;
+}
+
+.recommends__cards::-webkit-scrollbar {
+  display: none; 
+}
+
+.recommends__card {
+  width: 295px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 8px;
+  transition: 0.2s;
+}
+.recommends__card p {
+  font-size: 12px;
+}
+.recommends__title{
+  font-weight: bold;
+}
+
+.recommends__card:hover {
+  transform: scale(1.03);
+}
+
+
+
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media (max-width: 768px) {
@@ -793,7 +868,9 @@ top: 14rem;
   #slide__left__perfumes,
   #slide__right__accessories,
   #slide__left__accessories,
-  .accessories__title {
+  .accessories__title,
+  .button__recommends__right,
+  .button__recommends__left {
     display: none;
   }
 
@@ -993,5 +1070,18 @@ top: 14rem;
     width: 95%;
   }
 
-  /* Banner acessorios */
+  /* Recomendações */
+  .recommends{
+    padding: 3rem 1rem;
+  }
+  .recommends__title, .recommends__p{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .recommends__carousel{
+    padding-left: 2rem;
+  }
+
+  
 }
