@@ -959,9 +959,10 @@ input:checked ~ .content__element__hamburger {
 }
 
 /* Footer mobile */
-
-.footer__mobile__panel {
+.footer__mobile{
   display: none;
+}
+.footer__mobile__panel {
   background-color: var(--main-secundary);
   padding: 24px 18px 24px 30px;
   width: 100%;
@@ -999,10 +1000,53 @@ input:checked ~ .content__element__hamburger {
   color: var(--main-black-secundary);
 }
 
+.content__footer {
+  display: flex;
+  height: 13rem;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.content__footer p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 24px;
+}
+.content__footer img {
+  width: 100%;
+}
+.contet__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contet__logos, .contet__redes {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.contet__redes{
+  gap: 10px;
+}
+
+.copy p{
+  font-size: 10px;
+  padding-top: 2rem;
+}
+.convertr__logo{
+  padding: 1rem;
+}
+
 /* Footer */
-
-
-
 
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
@@ -1264,7 +1308,7 @@ input:checked ~ .content__element__hamburger {
   }
 
   /* Footer */
-  .footer__mobile__panel {
+  .footer__mobile {
     display: inline;
   }
 }
