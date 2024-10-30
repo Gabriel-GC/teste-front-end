@@ -337,15 +337,15 @@ input:checked ~ .content__element__hamburger {
   background-color: var(--gray-opacity);
 }
 
-#radio1:checked ~ .primeiro {
+#radio1:checked ~ .first {
   margin-left: 0%;
 }
 
-#radio2:checked ~ .primeiro {
+#radio2:checked ~ .first {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .primeiro {
+#radio3:checked ~ .first {
   margin-left: -50%;
 }
 
