@@ -1054,7 +1054,12 @@ input:checked ~ .content__element__hamburger {
   padding-top: 2rem;
 }
 .convertr__logo {
+  display: flex;
+  align-items: center;
   padding: 1rem;
+}
+.convertr__logo img {
+  width: 100px;
 }
 
 /* Footer desktop */
