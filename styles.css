@@ -959,7 +959,7 @@ input:checked ~ .content__element__hamburger {
 }
 
 /* Footer mobile */
-.footer__mobile{
+.footer__mobile {
   display: none;
 }
 .footer__mobile__panel {
@@ -1026,30 +1026,191 @@ input:checked ~ .content__element__hamburger {
   align-items: center;
 }
 
-.contet__logos, .contet__redes {
+.contet__logos,
+.contet__redes {
   display: flex;
-  width: 90%;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
-.contet__redes{
+.contet__logos__mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logo__mobile {
+  width: 130px !important;
+}
+.contet__redes {
   gap: 10px;
 }
 
-.copy p{
+.copy p {
   font-size: 10px;
   padding-top: 2rem;
 }
-.convertr__logo{
+.convertr__logo {
   padding: 1rem;
 }
 
-/* Footer */
+/* Footer desktop */
+
+.footer__desktop {
+  display: flex;
+  background-color: var(--main-secundary);
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__hub {
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__hub a {
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 0 10px 10px;
+}
+
+.footer__container {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.footer__content h5 {
+  margin-bottom: 12px;
+  color: var(--main-black-tertiary);
+  font-size: 12px;
+}
+.footer__content h6 {
+  margin: 2rem 0;
+  color: var(--main-black-tertiary);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer__content a {
+  text-decoration: none;
+  color: var(--main-black-tertiary);
+}
+
+.footer__content a:hover {
+  text-decoration: underline;
+}
+
+.footer__content li {
+  color: var(--main-black-tertiary);
+  list-style: none;
+  padding-bottom: 12px;
+}
+
+.logo__desk {
+  width: 130px;
+}
+
+.contet__logos__desk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  filter: grayscale(50);
+}
+
+.contet__cards__desk {
+  display: grid;
+  grid-template-columns: repeat(5, 35px);
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  filter: grayscale(50);
+}
+
+.contet__redes__desk {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  gap: 10px;
+}
+.li__desk {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.li__desk a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer__copy {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer__copy p {
+  color: var(--main-black-tertiary);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.footer__copy a {
+  font-weight: bold;
+  color: var(--main-black-secundary);
+  text-decoration: none;
+}
+
+.footer__copy a:hover {
+  text-decoration: underline;
+}
+.copy__logo {
+  position: absolute;
+  right: 18%;
+}
+.copy__logo img {
+  width: 100px;
+}
+
+@media (max-width: 1220px) {
+  .footer__container {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1080px) {
+  .footer__desktop {
+    display: none;
+  }
+  .footer__mobile {
+    display: inline;
+  }
+  .content__brand {
+    padding: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    justify-content: initial;
+  }
+}
 
 /* Mobile  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 @media (max-width: 768px) {
   header {
     position: fixed;
@@ -1074,7 +1235,8 @@ input:checked ~ .content__element__hamburger {
   #slide__left__accessories,
   .accessories__title,
   .button__recommends__right,
-  .button__recommends__left {
+  .button__recommends__left,
+  .footer__desktop {
     display: none;
   }
 
@@ -1215,13 +1377,6 @@ input:checked ~ .content__element__hamburger {
   }
 
   /* Banner brands */
-  .content__brand {
-    padding: 1rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    justify-content: initial;
-  }
   .content__brand img {
     width: 110px;
   }
