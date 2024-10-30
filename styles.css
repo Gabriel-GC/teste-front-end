@@ -589,6 +589,23 @@ input:checked ~ .content__element__hamburger {
   transition: 0.3s;
 }
 
+#slide__right:hover,
+#slide__left:hover,
+#slide__right__category:hover,
+#slide__left__category:hover,
+#slide__right__sellers:hover,
+#slide__left__sellers:hover,
+#slide__right__sunglasses:hover,
+#slide__left__sunglasses:hover,
+#slide__right__perfumes:hover,
+#slide__left__perfumes:hover,
+#slide__right__accessories:hover,
+#slide__left__accessories:hover,
+.button__recommends__right:hover,
+.button__recommends__left:hover {
+  transform: scale(1.1);
+}
+
 #slide__left__category {
   opacity: 0.5;
   float: right;
