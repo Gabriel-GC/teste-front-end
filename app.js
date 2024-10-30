@@ -1,4 +1,4 @@
-// Hero
+// Banner Hero
 var radio = document.querySelector(".manual__btn");
 var cont = 1;
 
@@ -110,7 +110,7 @@ document.addEventListener(
   false
 );
 
-// Recomendações
+// Cards de Recomendações
 
 document.addEventListener(
   "DOMContentLoaded",
