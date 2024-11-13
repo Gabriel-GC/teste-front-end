@@ -25,11 +25,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__right");
     button.onclick = function () {
-      document.getElementById("row__recommends").scrollLeft += 300;
+      document.getElementById("row__recommends").scrollLeft += 500;
     };
     var button = document.getElementById("slide__left");
     button.onclick = function () {
-      document.getElementById("row__recommends").scrollLeft -= 300;
+      document.getElementById("row__recommends").scrollLeft -= 500;
     };
   },
   false
@@ -40,11 +40,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__right__category");
     button.onclick = function () {
-      document.getElementById("row__category").scrollLeft += 300;
+      document.getElementById("row__category").scrollLeft += 500;
     };
     var button = document.getElementById("slide__left__category");
     button.onclick = function () {
-      document.getElementById("row__category").scrollLeft -= 300;
+      document.getElementById("row__category").scrollLeft -= 500;
     };
   },
   false
@@ -55,11 +55,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__right__sunglasses");
     button.onclick = function () {
-      document.getElementById("row__sunglasses").scrollLeft += 300;
+      document.getElementById("row__sunglasses").scrollLeft += 500;
     };
     var button = document.getElementById("slide__left__sunglasses");
     button.onclick = function () {
-      document.getElementById("row__sunglasses").scrollLeft -= 300;
+      document.getElementById("row__sunglasses").scrollLeft -= 500;
     };
   },
   false
@@ -70,11 +70,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__right__sellers");
     button.onclick = function () {
-      document.getElementById("row__sellers").scrollLeft += 300;
+      document.getElementById("row__sellers").scrollLeft += 500;
     };
     var button = document.getElementById("slide__left__sellers");
     button.onclick = function () {
-      document.getElementById("row__sellers").scrollLeft -= 300;
+      document.getElementById("row__sellers").scrollLeft -= 500;
     };
   },
   false
@@ -85,11 +85,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__right__perfumes");
     button.onclick = function () {
-      document.getElementById("row__perfumes").scrollLeft += 300;
+      document.getElementById("row__perfumes").scrollLeft += 500;
     };
     var button = document.getElementById("slide__left__perfumes");
     button.onclick = function () {
-      document.getElementById("row__perfumes").scrollLeft -= 300;
+      document.getElementById("row__perfumes").scrollLeft -= 500;
     };
   },
   false
@@ -100,11 +100,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("slide__left__accessories");
     button.onclick = function () {
-      document.getElementById("row__accessories").scrollLeft += 300;
+      document.getElementById("row__accessories").scrollLeft += 500;
     };
     var button = document.getElementById("slide__right__accessories");
     button.onclick = function () {
-      document.getElementById("row__accessories").scrollLeft -= 300;
+      document.getElementById("row__accessories").scrollLeft -= 500;
     };
   },
   false
@@ -117,11 +117,11 @@ document.addEventListener(
   function () {
     var button = document.getElementById("button__right");
     button.onclick = function () {
-      document.getElementById("carousel").scrollLeft += 300;
+      document.getElementById("carousel").scrollLeft += 500;
     };
     var button = document.getElementById("button__left");
     button.onclick = function () {
-      document.getElementById("carousel").scrollLeft -= 300;
+      document.getElementById("carousel").scrollLeft -= 500;
     };
   },
   false

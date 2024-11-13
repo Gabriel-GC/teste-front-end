@@ -40,6 +40,7 @@
                 </a>
                 <a href="#" class="menu__bag">
                     <img src="assets/icons/bag.png" alt="icone de bolsa">
+                    <span class="itens__bag">10</span>
                 </a>
             </div>
         </div>
@@ -54,21 +55,27 @@
                 <ul class="content__element__hamburger show">
                     <li>
                         <a href="#">Toda a loja</a>
+                        <img src="/assets/icons/icon-menu-navbar-hamburger.png" alt="icon menu">
                     </li>
                     <li>
                         <a href="#">Roupas</a>
+                        <img src="/assets/icons/icon-down-navbar.png" alt="icon down">
                     </li>
                     <li>
                         <a href="#">Calçados</a>
+                        <img src="/assets/icons/icon-down-navbar.png" alt="icon down">
                     </li>
                     <li>
                         <a href="#">Acessórios</a>
+                        <img src="/assets/icons/icon-down-navbar.png" alt="icon down">
                     </li>
                     <li>
                         <a href="#">Perfumes</a>
+                        <img src="/assets/icons/icon-down-navbar.png" alt="icon down">
                     </li>
                     <li>
                         <a href="#">Marcas</a>
+                        <img src="/assets/icons/icon-down-navbar.png" alt="icon down">
                     </li>
                     <li>
                         <a href="#">Infantil</a>
@@ -76,7 +83,7 @@
                 </ul>
             </nav>
             <a href="#" class="menu__favorite__mobile">
-                <img src="assets/icons/favorite.png" alt="icone de bolsa">
+                <img src="assets/icons/favorite.png" alt="icone de bolsa" class="fav_mobile">
             </a>
             <div class="content__logo__mobile">
                 <img src="assets/logotipe/logo-256-w.png" alt="logotipo da marca">
@@ -86,13 +93,14 @@
             </a>
             <a href="#" class="menu__bag__mobile">
                 <img src="assets/icons/bag.png" alt="icone de bolsa">
+                <span class="itens__bag">9</span>
             </a>
         </div>
     </header>
     <div class="search__mobile">
         <p>Busca</p>
         <input type="text" placeholder="EX. CAMISETA">
-        <img src="./assets/icons/procurar-b.png" alt="pesquisa">
+        <img class="search__icon" src="./assets/icons/procurar-b.png" alt="pesquisa">
     </div>
     <section class="hero">
         <div class="hero__content">
@@ -106,7 +114,7 @@
                         <hr>
                         <img src="./assets/logotipe/logo-emporio-64-b.png" alt="">
                     </div>
-                    <h1>Novidade</h1>
+                    <h1>Novidades</h1>
                     <p>Relógio pulso <span>emporio armani black</span></p>
                     <button>compre agora</button>
                 </div>
@@ -120,7 +128,7 @@
                         <hr>
                         <img src="./assets/logotipe/logo-emporio-64-b.png" alt="logo emporio">
                     </div>
-                    <h1>Novidade</h1>
+                    <h1>Novidades</h1>
                     <p>Relógio pulso <span>emporio armani black</span></p>
                     <button>Saiba mais</button>
                 </div>
@@ -159,7 +167,7 @@
         <button id="slide__right__category" type="button"><img src="./assets/icons/right-cat.png" alt="icone para direita"></button>
         <div class="row" id="row__category">
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="content__category__overlay">
                     <img src="assets/banners/category-one.jpg" alt="banner categoria 1">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
@@ -170,8 +178,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
-                    <img src="assets/banners/category-three.jpg" alt="banner categoria 2">
+                <div class="content__overlay" id="content__category__overlay">
+                    <img src="assets/banners/category-two.jpg" alt="banner categoria 2">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
                     </div>
@@ -181,8 +189,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
-                    <img src="assets/banners/category-two.jpg" alt="banner categoria 3">
+                <div class="content__overlay" id="content__category__overlay">
+                    <img src="assets/banners/category-three.jpg" alt="banner categoria 3">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
                     </div>
@@ -192,7 +200,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="content__category__overlay">
                     <img src="assets/banners/category-four.jpg" alt="banner categoria 4">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
@@ -203,7 +211,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="content__category__overlay">
                     <img src="assets/banners/category-one.jpg" alt="banner categoria 1-2">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
@@ -214,7 +222,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="content__category__overlay">
                     <img src="assets/banners/category-three.jpg" alt="banner categoria 2-2">
                     <div class="content__button">
                         <a href="#">Compre agora</a>
@@ -257,15 +265,19 @@
         <button id="slide__right" type="button"><img src="./assets/icons/right-row.png" alt="icone para direita"></button>
         <div class="row" id="row__recommends">
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/banners/product-tree.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/banners/product-tree.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -277,7 +289,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -287,6 +299,10 @@
                     <img src="assets/banners/product-one.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -298,7 +314,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -306,8 +322,13 @@
                     <img id="icon__favorite" src="assets/icons/favorite-b.png"
                         alt="icone favorito">
                     <img src="assets/banners/product-two.png" alt="imagem produto">
+                    
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -319,16 +340,20 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
                     <img id="icon__favorite" src="assets/icons/favorite-b.png"
                         alt="icone favorito">
-                    <img src="assets/banners/product-tree.png" alt="imagem produto">
+                    <img src="assets/banners/product-four.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -340,15 +365,19 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/banners/product-tree.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/banners/product-two.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -360,7 +389,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -369,6 +398,10 @@
                     <img src="assets/banners/product-one.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -380,7 +413,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -389,6 +422,10 @@
                     <img src="assets/banners/product-two.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -406,8 +443,8 @@
             <div class="banner__image">
                 <img src="assets/banners/show-now.png" alt="tenis lacoste">
             </div>
-            <div class="content__info">
-                <p>DESDE 1958</p>
+            <div class="content__info" id="info__calling">
+                <p id="since">DESDE 1958</p>
                 <h3>Sneakers Shop</h3>
                 <p id="p__calling">Descubra os sneakers Lacoste para homem e mulher, desde os mais esportivos aos mais modernos, incluindo os clássicos tênis esportivos</p>
                 <button>compre agora</button>
@@ -415,21 +452,25 @@
         </div>
         </div>
     </section>
-    <section class="scroll__galery">
+    <section class="scroll__galery" id="color__galery">
         <p class="row__title">Mais vendidos</p>
         <button id="slide__left__sellers" type="button"><img src="./assets/icons/left-row.png" alt="icone para esquerda"></button>
         <button id="slide__right__sellers" type="button"><img src="./assets/icons/right-row.png" alt="icone para direita"></button>
         <div class="row" id="row__sellers">
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/banners/product-tree.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/banners/product-tree.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -441,7 +482,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -450,6 +491,10 @@
                     <img src="assets/banners/product-one.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -461,7 +506,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay"id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -470,6 +515,10 @@
                     <img src="assets/banners/product-two.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -481,7 +530,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -490,6 +539,10 @@
                     <img src="assets/banners/product-tree.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -501,15 +554,19 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/banners/product-two.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/banners/product-two.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -521,7 +578,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -530,6 +587,10 @@
                     <img src="assets/banners/product-one.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -541,7 +602,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="content__overlay">
+                <div class="content__overlay" id="mobile__version__overlay">
                     <div class="content__icon__promo">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__off" src="assets/icons/off-sale.png" alt="icone oferta desconto">
@@ -550,6 +611,10 @@
                     <img src="assets/banners/product-two.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -577,6 +642,10 @@
                     <img src="assets/products/product-sunglasses-1.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -597,6 +666,10 @@
                     <img src="assets/products/product-sunglasses-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -617,6 +690,10 @@
                     <img src="assets/products/product-sunglasses-3.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -637,6 +714,10 @@
                     <img src="assets/products/product-sunglasses-4.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -649,14 +730,18 @@
             </div>
             <div class="card">
                 <div class="content__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/products/product-sunglasses-2.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/products/product-sunglasses-2.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -677,6 +762,10 @@
                     <img src="assets/products/product-sunglasses-1.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -697,6 +786,10 @@
                     <img src="assets/products/product-sunglasses-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -718,14 +811,18 @@
         <div class="row" id="row__perfumes">
             <div class="card">
                 <div class="content__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/products/product-perfume-1.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/products/product-perfume-1.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -746,6 +843,10 @@
                     <img src="assets/products/product-perfume-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -766,6 +867,10 @@
                     <img src="assets/products/product-perfume-3.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -786,6 +891,10 @@
                     <img src="assets/products/product-perfume-4.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -798,14 +907,18 @@
             </div>
             <div class="card">
                 <div class="content__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/products/product-perfume-1.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__new__on" src="assets/icons/new.png" alt="icone produto novo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/products/product-perfume-1.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -826,6 +939,10 @@
                     <img src="assets/products/product-perfume-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -846,6 +963,10 @@
                     <img src="assets/products/product-perfume-3.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -868,14 +989,18 @@
         <div class="row__accessories" id="row__accessories">
             <div class="card">
                 <div class="content__overlay">
+                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
+                    <img src="assets/products/product-acessories-1.png" alt="imagem produto">
+                    <div class="overlay"></div>
                     <div class="content__icon__promo">
                         <img id="icon__off__sale__on" src="assets/icons/off-sale.png" alt="icone oferta desconto">
                         <img id="icon__new__off" src="assets/icons/new.png" alt="icone produto novo">
                     </div>
-                    <img id="icon__favorite" src="assets/icons/favorite-b.png" alt="icone favorito">
-                    <img src="assets/products/product-acessories-1.png" alt="imagem produto">
-                    <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -897,6 +1022,10 @@
                     <img src="assets/products/product-acessories-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -917,6 +1046,10 @@
                     <img src="assets/products/product-acessories-3.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -937,6 +1070,10 @@
                     <img src="assets/products/product-acessories-1.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -957,6 +1094,10 @@
                     <img src="assets/products/product-acessories-2.png" alt="imagem produto">
                     <div class="overlay"></div>
                     <div class="overlay__button">
+                        <span id="bullet__1" class="overlay__bullet">10</span>
+                        <span id="bullet__2" class="overlay__bullet">20</span>
+                        <span id="bullet__3" class="overlay__bullet">30</span>
+                        <span id="bullet__4" class="overlay__bullet">40</span>
                         <a href="#">Compre agora</a>
                     </div>
                 </div>
@@ -988,7 +1129,7 @@
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                     </div>
-                    <p>Diego Madeiros</p>
+                    <p id="title">Diego Madeiros</p>
                     <p>O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, é igual as fotos no site</p>
                 </div>
             </div>
@@ -1001,7 +1142,7 @@
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                     </div>
-                    <p>Diego Madeiros</p>
+                    <p id="title">Diego Madeiros</p>
                     <p>O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, é igual as fotos no site</p>
                 </div>
             </div>
@@ -1014,7 +1155,7 @@
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                     </div>
-                    <p>Diego Madeiros</p>
+                    <p id="title">Diego Madeiros</p>
                     <p>O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, é igual as fotos no site</p>
                 </div>
             </div>
@@ -1027,7 +1168,7 @@
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                     </div>
-                    <p>Diego Madeiros</p>
+                    <p id="title">Diego Madeiros</p>
                     <p>O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, é igual as fotos no site</p>
                 </div>
             </div>
@@ -1040,10 +1181,17 @@
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                         <img src="assets/icons/estrela-pontiaguda.png" alt="estrela">
                     </div>
-                    <p>Diego Madeiros</p>
+                    <p id="title">Diego Madeiros</p>
                     <p>O produto chegou no prazo e as roupas são de qualidade incríveis como eu imaginava, é igual as fotos no site</p>
                 </div>
             </div>
+        </div>
+        <div class="nav__carousel">
+            <span id="dot"></span>
+            <span id="dot__select"></span>
+            <span id="dot"></span>
+            <span id="dot"></span>
+            <span id="dot"></span>
         </div>
     </section>
     <section class="banner__calling__two">
@@ -1133,24 +1281,24 @@
                     <img src="assets/icons/card-10.png" alt="bandeira cartão">
                 </div>
             </div>
-            <hr>
+            <hr class="hr__footer">
             <div class="content__footer">
                 <p>Site seguro</p>
                 <div class="contet__logos__mobile">
                     <img class="logo__mobile" src="assets/logotipe/google-safe.png" alt="google safe">
-                    <img class="logo__mobile" src="assets/logotipe/clearsale.png" alt="clearsale">
+                    <img class="logo__mobile__clear" src="assets/logotipe/clearsal2.png" alt="clearsale">
                 </div>
             </div>
             <div class="content__footer">
                 <div class="contet__redes">
-                    <a href="#"><img src="assets/icons/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="assets/icons/instagram.png" alt="instagram"></a>
+                    <a href="#"><img class="logo__redes" src="assets/icons/face.png" alt="facebook"></a>
+                    <a href="#"><img class="logo__redes" src="assets/icons/insta.png" alt="instagram"></a>
                 </div>
                 <div class="copy">
-                    <p>© 2023 - TATUAPÉ CONCEITO COMERCIO DE ROUPAS E ACESSORIOS LTDA CNPJ: 17.521.536/0001-55</p>
+                    <p><span>© 2023 - TATUAPÉ CONCEITO</span> COMERCIO DE ROUPAS E ACESSORIOS LTDA CNPJ: 17.521.536/0001-55</p>
                 </div>
                 <div class="convertr__logo">
-                    <img src="assets/logotipe/convertr-gray-155.png" alt="convertr">
+                    <img src="assets/logotipe/convertr.png" alt="convertr">
                 </div>
             </div>
         </section>
@@ -1223,15 +1371,15 @@
                         <img class="logo__desk" src="assets/logotipe/clearsale.png" alt="clearsale">
                     </div>
                     <div class="contet__redes__desk">
-                        <a href="#"><img src="assets/icons/facebook.png" alt="facebook"></a>
-                        <a href="#"><img src="assets/icons/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="assets/icons/face.png" alt="facebook"></a>
+                        <a href="#"><img src="assets/icons/insta.png" alt="instagram"></a>
                     </div>
                 </div>
                 <div class="footer__copy">
-                    <p>@ 2024 - Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-gon%C3%A7alves-cunha-37347b305/" target="_blank"> Gabriel Gonçalves Cunha</a> </p>
-                    <!-- <p>@ 2023 - <a href="">TATUAPÉ</a> comercio de roupas e acessórios ltda cnpj: 17.512.536/0001-55</a></p> -->
+                    <!-- <p>@ 2024 - Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-gon%C3%A7alves-cunha-37347b305/" target="_blank"> Gabriel Gonçalves Cunha</a> </p> -->
+                    <p>@ 2023 - <a href="">TATUAPÉ</a> comercio de roupas e acessórios ltda cnpj: 17.512.536/0001-55</a></p>
                     <div class="copy__logo">
-                        <img src="assets/logotipe/convertr-gray-155.png" alt="logo convertr">
+                        <img src="assets/logotipe/convertr.png" alt="logo convertr">
                     </div>
                 </div>
             </div>
