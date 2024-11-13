@@ -1756,7 +1756,8 @@ left: 162px;
   }
   .recommends__title{
     font-size: 25px;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 28px;
     padding-bottom: 8px;
 
   }
